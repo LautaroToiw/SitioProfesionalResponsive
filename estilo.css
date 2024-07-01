@@ -45,7 +45,7 @@ nav h1 {
     gap: 8px;
 }
 
-input {
+.input-menu {
     display: none;
 }
 
@@ -76,7 +76,7 @@ hr{
     }
 
 
-    input:checked~.lista {
+    .input-menu:checked~.lista {
         display: block;
         position: absolute;
         top: 90px;
@@ -89,22 +89,22 @@ hr{
         border: #1f1930 2px solid;
     }
 
-    input:checked ~ .lista hr{
+    .input-menu:checked ~ .lista hr{
         display: block;
 		border-top: 2px solid #1f1930;
         width: 1000%;
     }
 
-    input:checked~label {
+    .input-menu:checked~.tres-lineas {
         background-color: #1f1930;
         color: white;
     }
 
-    label:hover {
+    .tres-lineas:hover {
         background: #f1f1f1;
     }
 
-    .labeldiv {
+    .tres-lineasdiv {
         display: flex;
         flex-direction: column;
         justify-content: end;
@@ -114,7 +114,7 @@ hr{
         text-align: right;
     }
 
-    label {
+    .tres-lineas {
         margin-left: auto;
         display: flex;
         justify-content: center;
