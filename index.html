@@ -30,8 +30,8 @@
                     <h1>Ester Claudia Rico</h1>
                 </div>
                 <div class="labeldiv">
-                    <input class="tres-lineas" type="checkbox" id="menu">
-                    <label for="menu"> ☰ </label>
+                    <input class="input-menu" type="checkbox" id="menu">
+                    <label class="tres-lineas" for="menu"> ☰ </label>
                     <ul class="lista">
                         <a class="active" href="#">
                             <li>Inicio</li>
@@ -117,16 +117,14 @@
 
         <script>
             function validateForm() {
-                event.preventDefault(); /*hacer que no se mande automaticamente para poder mostrar el mensaje de enviado*/
-
-                let valid = true; /*bandera*/
+                event.preventDefault();
                 
-                /*obtener los valores del formulario*/
+                let valid = true;
+                
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const message = document.getElementById('message').value;
-                
-                /*Validacion*/
+    
                 if (name === "") {
                     document.getElementById('nameError').style.display = "block";
                     valid = false;
@@ -147,7 +145,7 @@
                 } else {
                     document.getElementById('messageError').style.display = "none";
                 }
-                /*mensaje valido*/
+
                 if (valid) {
                 document.getElementById('successMessage').style.display = "block";
             }
